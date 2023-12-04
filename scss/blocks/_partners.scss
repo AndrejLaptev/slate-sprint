@@ -1,0 +1,80 @@
+.partners{
+    padding: 50px 0px;
+}
+.partners__row{
+    margin-bottom: 50px;
+}
+.partners__list{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    justify-items: center;
+    align-items: center;
+}
+.partners__item{
+    background-size: contain;
+}
+.partners__item--1{
+    background: url('./../img/partners/appstore.svg');
+    height: 60px;
+    width: 60px;
+    background-repeat: no-repeat;
+}
+.partners__item--2{
+    background: url('./../img/partners/apiary.svg');
+    height: 60px;
+    width: 60px;
+    background-repeat: no-repeat;
+}
+.partners__item--3{
+    background: url('./../img/partners/android.svg');
+    height: 70px;
+    width: 60px;
+    background-repeat: no-repeat;
+}
+.partners__item--4{
+    background: url('./../img/partners/basecamp.svg');
+    height: 60px;
+    width: 72px;
+    background-repeat: no-repeat;
+}
+.partners__item--5{
+    background: url('./../img/partners/airbnb.svg');
+    height: 65px;
+    width: 60px;
+    background-repeat: no-repeat;
+}
+.partners__item--6{
+    background: url('./../img/partners/ibm.svg');
+    height: 60px;
+    width: 150px;
+    background-repeat: no-repeat;
+}
+
+@media  screen and (max-width: 1120px) {
+    .partners__list{
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 50px;
+    }
+    .partners__item--1{
+        justify-self: right;
+    }
+    .partners__item--3{
+        justify-self: left;
+    }
+    .partners__item--4{
+        justify-self: right;
+    }
+    .partners__item--6{
+        justify-self: left;
+        background: url('./../img/partners/imb-small.svg');
+        height: 33px;
+        width: 83px;
+    }
+}
+
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // flex-wrap: wrap;
+    // column-gap: 74px;
+    // row-gap: 52px;

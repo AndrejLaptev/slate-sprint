@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Graphik';
+    src: url('./../fonts/Graphik-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik';
+    src: url('./../fonts/Graphik-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Graphik', sans-serif;
+    font-size: 1rem; //16px
+    line-height: 1.5rem; // 24px
+    font-weight: 400; // regular
+    overflow-x: hidden;
+}
+
+// hover focus active
+.logo,
+.nav__link,
+.btn,
+.footer__adress,
+.footer__phone,
+.footer__socials-item {
+    transition: opacity .2s ease-in;
+}
+
+.logo:hover,
+.nav__link:hover,
+.btn:hover,
+.footer__adress:hover,
+.footer__phone:hover,
+.footer__socials-item:hover {
+    opacity: .8;
+}
+
+.logo:focus,
+.nav__link:focus,
+.btn:focus,
+.footer__adress:focus,
+.footer__phone:focus {
+    opacity: .6;
+}
+
+.logo:active,
+.nav__link:active,
+.btn:active,
+.footer__adress:active,
+.footer__phone:active {
+    opacity: .4;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}

@@ -1,0 +1,32 @@
+.capabillity{
+    padding: 105px 0px;
+}
+.capabillity__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.capabillity__img{
+    margin-bottom: 57px;
+}
+.capabillity__column{
+    display: flex;
+    flex-direction: column;
+    row-gap: 45px;
+    max-width: 269px;
+}
+.capabillity__title {
+    color: var(--white-color);
+    margin-bottom: 30px;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    letter-spacing: .0125rem;
+    font-weight: 500;
+}
+.capabillity__card-img {
+    margin-right: 10px;
+}
+.capabillity__text {
+    color: var(--white-color);
+}

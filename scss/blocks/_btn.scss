@@ -1,0 +1,42 @@
+.btn{
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+    padding: 13.5px 40px;
+    font-size: 1.0625rem; // 17px
+    line-height: 1.5625rem; // 25px
+    letter-spacing: .0125rem; // 0.2px
+}
+
+.btn--header{
+    padding: 13.5px 46px;
+}
+.btn--blue{
+    background-color: var(--blue-color);
+    border: 1px solid var(--blue-color);
+}
+.btn--blue-header-bottom{
+    padding: 20px 40px;
+}
+
+.btn--gallery, .btn--partners{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media screen and (max-width: 600px) {
+    .btn--blue-header-bottom, .btn--header-bottom{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 288px;
+    }
+    .btn--header{
+        padding: 10px 32px;
+    }
+    .btn--blue-header-bottom{
+        padding: 15px 35px;
+    }
+    .btn--extension{
+        padding: 11px
+    }
+}

@@ -1,0 +1,24 @@
+.nav{
+    position: relative;
+}
+.nav__list{
+    display: flex;
+    column-gap: 51px;
+}
+.nav__list--footer{
+    flex-direction: column;
+    row-gap: 19px;
+}
+.nav__link{
+    color: var(--white-color);
+}
+@media screen and (max-width: 930px){
+    .nav__list--mobile{
+        display: none;
+    }
+}
+@media screen and (max-width: 768px){
+    .nav__item{
+        margin-left: 25%;
+    }
+}
