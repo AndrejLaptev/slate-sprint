@@ -18,34 +18,96 @@
     margin-bottom: 35px;
 }
 // обертка для изображения с градиентом
-.header__image-wrapper {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 85px;
-    overflow: hidden;
-}
+// .header__image-wrapper {
+//     position: relative;
+//     margin-bottom: 85px;
+//     overflow: hidden;
+// }
+
 
 // Псевдо-элемент для создания эффекта градиента, выходящего за границы изображения
-.header__image-wrapper::after {
-    content: "";
-    // Позиционирование псевдо-элемента на 50% высоты обертки
-    position: absolute;
-    top: 50%;
-    // Отрицательные значения для создания эффекта выхода за границы
-    right: -10%;
-    bottom: -10%;
-    left: -10%;
-    // градиент
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #0E0E0E 66.5%);
+// .header__image::before {
+//     content: "";
+//     // Позиционирование псевдо-элемента на 50% высоты обертки
+//     position: absolute;
+//     top: 50%;
+//     // Отрицательные значения для создания эффекта выхода за границы
+//     right: -10%;
+//     bottom: -10%;
+//     left: -10%;
+//     // градиент
+//     background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #0E0E0E 66.5%);
+// }
+// стили для изображения
+.header__image-wrapper{
+    display: flex;
+    justify-content: center;
 }
 
-// стили для изображения
 .header__image {
     display: block;
-    // отключение взаимодействия с изображением
-    pointer-events: none;
+    background-image: url('./../img/header/screens.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 841px;
+    width: 1579px;
+}
+@media screen and (max-width: 1550px){
+    .header__image{
+        height: 831px;
+    }
+}
+@media screen and (max-width: 1400px){
+    .header__image{
+        height: 731px;
+    }
+}
+@media screen and (max-width: 1300px){
+    .header__image{
+        height: 701px;
+    }
+}
+@media screen and (max-width: 1200px){
+    .header__image{
+        height: 631px;
+    }
+}
+@media screen and (max-width: 1100px){
+    .header__image{
+        height: 600px;
+    }
+}
+@media screen and (max-width: 1000px){
+    .header__image{
+        height: 531px;
+    }
+}
+@media screen and (max-width: 900px){
+    .header__image{
+        height: 470px;
+    }
+}
+@media screen and (max-width: 800px){
+    .header__image{
+        height: 380px;
+    }
+}
+@media screen and (max-width: 700px){
+    .header__image{
+        height: 322px;
+    }
+}
+@media screen and (max-width: 600px){
+    .header__image{
+        height: 322px;
+    }
+}
+@media screen and (max-width: 549px){
+    .header__image{
+        background-image: url('./../img/header/screens-small.webp');
+        height: 435px;
+        width: 540px;
+    }
 }
 @media screen and (max-width: 600px){
     .header__bottom-buttons{
