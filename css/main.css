@@ -693,15 +693,15 @@ body {
   border: 1px solid var(--white-color);
   border-radius: 10px;
   max-width: 430px;
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+  transition: -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
 }
 
 .feedback__card:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-  -webkit-transition: -webkit-transform 0.2s ease-in;
-  transition: -webkit-transform 0.2s ease-in;
-  transition: transform 0.2s ease-in;
-  transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
 }
 
 .feedback__card-info {

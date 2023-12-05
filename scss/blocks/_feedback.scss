@@ -16,10 +16,10 @@
     border: 1px solid var(--white-color);
     border-radius: 10px;
     max-width: 430px;
+    transition: transform .2s ease-in;
 }
 .feedback__card:hover{
     transform: scale(1.05);
-    transition: transform .2s ease-in;
 }
 .feedback__card-info {
     display: flex;
