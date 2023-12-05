@@ -5,17 +5,42 @@
     font-size: 1.0625rem; // 17px
     line-height: 1.5625rem; // 25px
     letter-spacing: .0125rem; // 0.2px
+    transition: background-color .2s ease-in, transform .2s ease-in;
 }
-
-.btn--header{
-    padding: 13.5px 46px;
-}
-.btn--blue{
+.btn:hover{
     background-color: var(--blue-color);
     border: 1px solid var(--blue-color);
 }
+.btn:active{
+    transform: scale(1.1);
+}
+.btn:focus{
+    background-color: var(--blue-light-color);
+}
 .btn--blue-header-bottom{
     padding: 20px 40px;
+    background-color: var(--blue-color);
+    border: 1px solid var(--blue-color);
+}
+.btn--blue-header-bottom:hover{
+    background-color: var(--blue-light-color);
+}
+.btn--blue-header-bottom:focus{
+    border: 1px solid var(--white-color);
+}
+.btn--extension{
+    background-color: var(--blue-color);
+    border: 1px solid var(--blue-color);
+}
+.btn--extension:hover{
+    background-color: var(--blue-light-color);
+    border: 1px solid var(--blue-light-color);
+}
+.btn--extension:focus{
+    border: 1px solid #000;
+}
+.btn--header{
+    padding: 13.5px 46px;
 }
 
 .btn--gallery, .btn--partners{

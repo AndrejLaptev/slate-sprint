@@ -91,7 +91,9 @@ legend {
   --bg-color: #181818;
   --white-color: #fff;
   --blue-color: #4452fe;
+  --blue-light-color: #43b6ff;
   --grey-color: #5C5C5C;
+  --grey-light-color: #6e6b6b;
   --black-font-color: #000;
 }
 
@@ -124,33 +126,32 @@ body {
 .footer__adress,
 .footer__phone,
 .footer__socials-item {
-  -webkit-transition: opacity 0.2s ease-in;
-  transition: opacity 0.2s ease-in;
+  -webkit-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
 }
 
 .logo:hover,
 .nav__link:hover,
-.btn:hover,
 .footer__adress:hover,
 .footer__phone:hover,
 .footer__socials-item:hover {
-  opacity: 0.8;
+  color: var(--blue-light-color);
 }
 
 .logo:focus,
 .nav__link:focus,
-.btn:focus,
 .footer__adress:focus,
 .footer__phone:focus {
-  opacity: 0.6;
+  color: var(--blue-light-color);
 }
 
 .logo:active,
 .nav__link:active,
-.btn:active,
 .footer__adress:active,
 .footer__phone:active {
-  opacity: 0.4;
+  opacity: 0.6;
+  -webkit-transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s ease-in;
 }
 
 .container {
@@ -284,19 +285,56 @@ body {
   font-size: 1.0625rem;
   line-height: 1.5625rem;
   letter-spacing: 0.0125rem;
+  -webkit-transition: background-color 0.2s ease-in, -webkit-transform 0.2s ease-in;
+  transition: background-color 0.2s ease-in, -webkit-transform 0.2s ease-in;
+  transition: background-color 0.2s ease-in, transform 0.2s ease-in;
+  transition: background-color 0.2s ease-in, transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
 }
 
-.btn--header {
-  padding: 13.5px 46px;
-}
-
-.btn--blue {
+.btn:hover {
   background-color: var(--blue-color);
   border: 1px solid var(--blue-color);
 }
 
+.btn:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.btn:focus {
+  background-color: var(--blue-light-color);
+}
+
 .btn--blue-header-bottom {
   padding: 20px 40px;
+  background-color: var(--blue-color);
+  border: 1px solid var(--blue-color);
+}
+
+.btn--blue-header-bottom:hover {
+  background-color: var(--blue-light-color);
+}
+
+.btn--blue-header-bottom:focus {
+  border: 1px solid var(--white-color);
+}
+
+.btn--extension {
+  background-color: var(--blue-color);
+  border: 1px solid var(--blue-color);
+}
+
+.btn--extension:hover {
+  background-color: var(--blue-light-color);
+  border: 1px solid var(--blue-light-color);
+}
+
+.btn--extension:focus {
+  border: 1px solid #000;
+}
+
+.btn--header {
+  padding: 13.5px 46px;
 }
 
 .btn--gallery, .btn--partners {
