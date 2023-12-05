@@ -553,6 +553,14 @@ body {
   gap: 33px;
 }
 
+.gallery__link {
+  outline: none;
+}
+
+.gallery__link:focus img {
+  outline: 2px solid var(--blue-light-color);
+}
+
 .gallery__img {
   width: 100%;
   height: 100%;
