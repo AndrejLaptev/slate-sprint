@@ -17,27 +17,7 @@
     row-gap: 21px;
     margin-bottom: 35px;
 }
-// обертка для изображения с градиентом
-// .header__image-wrapper {
-//     position: relative;
-//     margin-bottom: 85px;
-//     overflow: hidden;
-// }
 
-
-// Псевдо-элемент для создания эффекта градиента, выходящего за границы изображения
-// .header__image::before {
-//     content: "";
-//     // Позиционирование псевдо-элемента на 50% высоты обертки
-//     position: absolute;
-//     top: 50%;
-//     // Отрицательные значения для создания эффекта выхода за границы
-//     right: -10%;
-//     bottom: -10%;
-//     left: -10%;
-//     // градиент
-//     background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #0E0E0E 66.5%);
-// }
 // стили для изображения
 .header__image-wrapper{
     position: relative;
