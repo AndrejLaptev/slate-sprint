@@ -954,6 +954,12 @@ body {
 .footer__adress-text, .footer__phone-text {
   color: var(--white-color);
   font-weight: 500;
+  -webkit-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
+}
+
+.footer__adress-text:hover, .footer__phone-text:hover {
+  color: var(--blue-light-color);
 }
 
 .footer__socials-list {
